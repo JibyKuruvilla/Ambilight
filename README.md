@@ -1,9 +1,11 @@
 # Ambilight
 Ambilight helps to dynamically adjusts the RGB LEDs to match the edge colors of your screen in real time, creating an immersive viewing experience.
+
 <video autoplay loop muted playsinline width="640">
   <source src="./videos/ambilight.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
 ## How It Works
 - The led_server.py script on the host machine captures screen colors periodically and calculates RGB values for the LED strip.
 - It transmits the RGB data to a Raspberry Pi via SSH.
