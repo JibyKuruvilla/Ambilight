@@ -50,4 +50,4 @@ python3 led_server.py
 ```
 
 ## Acknowledgments
-Special thanks to my project partner Marie-Louise Korn and all the developers and contributors of all the libraries used in this project.
+Special thanks to my project contributor Marie-Louise Korn and all the developers and contributors of all the libraries used in this project.
