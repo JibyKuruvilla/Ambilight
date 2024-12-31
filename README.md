@@ -1,6 +1,9 @@
 # Ambilight
 Ambilight helps to dynamically adjusts the RGB LEDs to match the edge colors of your screen in real time, creating an immersive viewing experience.
-
+<video autoplay loop muted playsinline width="640">
+  <source src="./videos/ambilight.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ## How It Works
 - The led_server.py script on the host machine captures screen colors periodically and calculates RGB values for the LED strip.
 - It transmits the RGB data to a Raspberry Pi via SSH.
@@ -24,9 +27,11 @@ The host machine and the Raspberry Pi must be connected to the same local networ
      pip install -r requirements_led_server.txt
      ```
    - Create a .env file and add these variables with their respective values:
+     ```txt
       SSH_RASPBERRYPI_IPADDRESS=<Your Raspberry Pi IP>
       SSH_RASPBERRYPI_USERNAME=<Your Username>
       SSH_RASPBERRYPI_PASSWORD=<Your Password>
+     ```
    - Adjust `LED_TOP`, `LED_RIGHT`, `LED_BOTTOM`, and `LED_LEFT` in `led_server.py` to match your LED configuration.
 
 3. **Raspberry Pi**:
